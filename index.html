@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto treno</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="image">
+          <img src="img/trenitalia.png" alt="treno">
+        </div>
+      </header>
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Le nostre destinazioni</a></li>
+            <li><a href="#">Offerte</a></li>
+            <li><a href="#">Programma giornaliero</a></li>
+            <li><a href="#">Acquista il tuo biglietto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <div class="label">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" value="">
+        </div>
+
+        <div class="label">
+          <label for="km">Chilometri che vorresti percorrere</label>
+          <input id="km" type="number" name="km" value="">
+        </div>
+
+        <div class="label">
+          <label for="categoria">Seleziona la tua età</label>
+          <select id="categoria" name="categoria">
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Minorenne">Minorenne</option>
+            <option value="Over65">Over 65</option>
+          </select>
+        </div>
+
+        <button id="creaBiglietto" type="button" name="crea">Crea Biglietto</button>
+        <button id="annulla" type="button" name="annulla">Annulla</button>
+      </main>
+
+      <table id="biglietto" class="hidden">
+        <thead>
+          <tr>
+            <th>Nome Passeggero</th>
+            <th>Numero Treno</th>
+            <th>Numero Carrozza</th>
+            <th>Prezzo del Biglietto</th>
+            <th>Categoria Passeggero</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="passeggero"></td>
+            <td id="numeroTreno"></td>
+            <td id="carrozza"></td>
+            <td id="prezzo"></td>
+            <td id="categoriaPasseggero"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="js/treno.js">
+    </script>
+  </body>
+</html>
